@@ -1,0 +1,8 @@
+# Menggunakan lambda function untuk mengalikan bilangan dengan dua
+multiply_by_two = lambda x: x * 2
+
+# Menggunakan higher-order function untuk mengaplikasikan fungsi pada setiap elemen list
+numbers = [1, 2, 3, 4, 5]
+result = list(map(multiply_by_two, numbers))
+
+print(result) # output: [2, 4, 6, 8, 10]

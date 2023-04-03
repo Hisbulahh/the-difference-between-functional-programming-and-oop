@@ -1,0 +1,30 @@
+# Membuat class Animal
+class Animal:
+    # Constructor
+    def __init__(self, name, species):
+        self.name = name
+        self.species = species
+    
+    # Method untuk mengeluarkan suara hewan
+    def make_sound(self):
+        pass
+
+# Membuat subclass Cat dari class Animal
+class Cat(Animal):
+    # Implementasi method make_sound
+    def make_sound(self):
+        return "Meow"
+
+# Membuat subclass Dog dari class Animal
+class Dog(Animal):
+    # Implementasi method make_sound
+    def make_sound(self):
+        return "Woof"
+
+# Membuat objek dari class Cat dan Dog
+cat = Cat("Tom", "Felis catus")
+dog = Dog("Spike", "Canis lupus familiaris")
+
+# Memanggil method make_sound pada objek
+print(cat.make_sound()) # output: "Meow"
+print(dog.make_sound()) # output: "Woof"
